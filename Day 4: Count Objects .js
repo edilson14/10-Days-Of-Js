@@ -6,8 +6,8 @@
  */
 function getCount(objects) {
     let equalObjects = 0
-    for (let i = 0; i < objects.length; i++){
-        ((objects[i].x == objects[i].y) ? equalObjects++: '') 
-    }
+    objects.forEach(function(object) {
+        ((objects.x == objects.y) ? equalObjects++: '') 
+    })
     return equalObjects
 }
