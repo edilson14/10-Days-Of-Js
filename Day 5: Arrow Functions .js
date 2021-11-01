@@ -6,6 +6,10 @@
  */
 function modifyArray(nums) {
     return nums.map(number => 
-        number%2 === 0 ? number*2:number*3
+        isOdd(number) ? number*2:number*3
     ) 
+}
+
+function isOdd(num) {
+    return !(num%2 === 0)
 }

@@ -2,13 +2,13 @@
 function getDayName(dateString) {
     let dayName;
     // Write your code here
-    const data = new Date(dateString)
-    dayName = data.getDay() === 0 ? 'Sunday'
-        : data.getDay() === 1 ? 'Monday'
-            : data.getDay() === 2 ? 'Tuesday'
-                : data.getDay() === 3 ? 'Wednesday'
-                    : data.getDay() === 4 ? 'Thursday'
-                        : data.getDay() === 5 ? 'Friday'
+    const data = new Date(dateString).getDay()
+    dayName = data === 0 ? 'Sunday'
+        : data === 1 ? 'Monday'
+            : data === 2 ? 'Tuesday'
+                : data === 3 ? 'Wednesday'
+                    : data === 4 ? 'Thursday'
+                        : data === 5 ? 'Friday'
                             : 'Saturday'
          
     return dayName;
