@@ -5,7 +5,7 @@
 **/
 function getSecondLargest(nums) {
     // Complete the function
-    nums.sort(function (x, y) { return x > y })
+    nums.sort((x, y) => { return x > y })
     nums = [...new Set(nums)]
     
     return nums[nums.length-2]   
