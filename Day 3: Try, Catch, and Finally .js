@@ -8,5 +8,7 @@ function reverseString(s) {
     } catch (e) {
         console.log(e.message)
         console.log(s)
+    } finally {
+        console.log("scope finally was reached")
     }
 }
