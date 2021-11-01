@@ -11,5 +11,5 @@ function modifyArray(nums) {
 }
 
 function isOdd(num) {
-    !(num%2 === 0)
+    return !(num%2 === 0)
 }
